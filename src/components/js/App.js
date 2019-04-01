@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../img/logo.svg';
+import '../css/App.css';
+import CommonHeader from '../../components/js/CommonHeader'
 
 class App extends Component {
   render() {
@@ -17,9 +18,10 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Change React
           </a>
         </header>
+        <CommonHeader/>
       </div>
     );
   }
