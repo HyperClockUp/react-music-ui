@@ -6,6 +6,8 @@ import './App.css';
 import NavigationBar from '../NavigationBar/index';
 import TestComponent from '../TestComponent/index';
 import Home from '../Home/index'
+import Music from '../Music/index'
+import MusicPlayer from '../MusicPlayer/index'
 
 const tags = [
     {
@@ -26,9 +28,10 @@ class App extends Component {
                 <Router>
                     <NavigationBar tags={tags}/>
                     <Route path='/' exact component={Home}/>
-                    <Route path='/music' component={TestComponent}/>
+                    <Route path='/music' component={Music}/>
                     <Route path='/community' component={TestComponent}/>
                 </Router>
+                <MusicPlayer ref="musicPlayer"/>
             </div>
         );
     }
