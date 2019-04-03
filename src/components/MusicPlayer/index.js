@@ -53,7 +53,9 @@ class MusicPlayer extends PureComponent {
             <div className={`music-player-container ${this.state.show ? "player-show" : "player-hidden"}`}
                  ref={this.playerDom}>
                 <div className={`toggle ${this.state.show ? 'toggle-show' : 'toggle-hidden'}`}
-                     onClick={this.changePlayerState} ref={this.btnDom}></div>
+                     onClick={this.changePlayerState} ref={this.btnDom}>
+
+                </div>
             </div>
         )
     }
