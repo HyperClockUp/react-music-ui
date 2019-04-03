@@ -26,4 +26,10 @@
   background: white;
   color: #242424;
 }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 /*# sourceMappingURL=index.css.map */
